@@ -15,75 +15,154 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="grid grid-cols-1 md:grid-cols-7 md:h-screen md:w-screen md:overflow-hidden">
-    <aside class="md:col-span-3 grid grid-cols-1 md:grid-cols-6 md:relative">
-      <div class="hidden md:block md:col-span-5 bg-[#e7d9d0]"></div>
-      <div
-        class="w-full md:w-fit md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2"
-      >
-        <div class="card shadow-2xl bg-[#e7d9d0] w-full mx-auto max-w-md md:w-96">
-          <div class="card-body items-center text-center">
-            <div class="avatar">
-              <div class="w-48 rounded-full">
-                <img src="./images/profile.jpeg" />
+  <body class="flex flex-col w-dvw overflow-x-hidden">
+    <header class="navbar z-10 bg-base-100 shadow-lg fixed">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">Tri Okta Anggraini</a>
+      </div>
+      <div class="flex-none">
+        <div class="dropdown dropdown-end block md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-square">
+            <img src="./images/menu.svg" alt="menu" class="h-5 w-5" />
+          </div>
+          <ul
+            tabindex="0"
+            class="menu dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+          >
+            <li><a href="./index.html" class="focus">About Me</a></li>
+            <li><a href="./resume.html">Resume</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <ul class="menu uppercase menu-horizontal hidden md:flex px-1">
+          <li><a href="./index.html" class="focus">About Me</a></li>
+          <li><a href="./resume.html">Resume</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+    <div class="grid grid-cols-1 pt-20 md:p-0 md:grid-cols-2 md:h-dvh w-full">
+      <aside class="grid grid-cols-1 md:grid-cols-6 md:relative">
+        <div class="hidden md:block md:col-span-5 bg-[#e7d9d0]"></div>
+        <div
+          class="w-full md:w-fit md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2"
+        >
+          <div
+            class="card shadow-2xl bg-[#e7d9d0] w-full mx-auto max-w-md md:w-96"
+          >
+            <div class="card-body items-center text-center">
+              <div class="avatar">
+                <div class="w-48 rounded-full">
+                  <img src="./images/profile.jpeg" />
+                </div>
+              </div>
+              <h1
+                class="text-xl md:text-2xl lg:text-3xl leading-snug font-semibold"
+              >
+                Tri Okta Anggraini
+              </h1>
+              <hr class="border border-neutral my-1 w-16" />
+              <p class="font-mono text-base md:text-lg leading-relaxed">
+                QUALITY CONTROL
+              </p>
+            </div>
+            <div class="card-actions h-12 rounded-b-2xl bg-white">
+              <div class="flex gap-2 m-auto">
+                <a
+                  href="https://www.linkedin.com/in/tri-okta-anggraini-7824b1249/"
+                  aria-label="profile linkedin"
+                  target="_blank"
+                >
+                  <img src="./images/linkedin.svg" alt="linkedin" class="w-6" />
+                </a>
+                <a
+                  href="https://www.instagram.com/bia_elkz/"
+                  aria-label="profile instagram"
+                  target="_blank"
+                >
+                  <img
+                    src="./images/instagram.svg"
+                    alt="instagram"
+                    class="w-6"
+                  />
+                </a>
+                <a
+                  href="https://wa.me/6283171616493"
+                  aria-label="whatsapp number"
+                  target="_blank"
+                >
+                  <img src="./images/whatsapp.svg" alt="whatsapp" class="w-6" />
+                </a>
               </div>
             </div>
-            <h1
-              class="text-xl md:text-2xl lg:text-3xl leading-snug font-semibold"
-            >
-              Tri Okta Anggraini
-            </h1>
-            <hr class="border border-neutral my-1 w-16" />
-            <p class="font-mono text-base md:text-lg leading-relaxed">
-              QUALITY CONTROL
-            </p>
           </div>
-          <div class="card-actions h-12 rounded-b-2xl bg-white">
-            <div class="flex gap-2 m-auto">
-              <a
-                href="https://www.linkedin.com/in/tri-okta-anggraini-7824b1249/"
-                aria-label="profile linkedin"
+        </div>
+      </aside>
+      <main class="flex items-center p-4">
+        <section class="hero md:justify-items-start">
+          <div class="hero-content">
+            <div class="max-w-md">
+              <h1
+                class="text-2xl md:text-3xl lg:text-4xl leading-snug font-semibold"
               >
-                <img src="./images/linkedin.svg" alt="linkedin" class="w-6" />
-              </a>
+                Tri Okta Anggraini
+              </h1>
+              <p class="prose text-sm md:text-base leading-relaxed my-4">
+                Profesional dengan pengalaman sebagai Operator Quality Control
+                di industri manufaktur, terampil dalam menganalisis kualitas
+                produk, monitoring proses produksi, dan dokumentasi.
+                Berorientasi pada detail, adaptif, dan mampu bekerja di bawah
+                tekanan untuk mencapai hasil terbaik.
+              </p>
               <a
-                href="https://www.instagram.com/bia_elkz/"
-                aria-label="profile instagram"
+                href="./documents/resume-tri_okta_anggraini.pdf"
+                class="btn btn-primary rounded-full"
+                target="_blank"
               >
-                <img src="./images/instagram.svg" alt="instagram" class="w-6" />
+                <img src="./images/download.svg" alt="download" class="w-5" />
+                Download CV
               </a>
             </div>
           </div>
+        </section>
+      </main>
+    </div>
+    <footer
+      class="footer footer-center bg-base-200 gap-y-5 text-base-content rounded p-8"
+    >
+      <nav class="grid grid-flow-col gap-4">
+        <a href="./index.html" class="link link-hover">About Me</a>
+        <a href="./resume.html" class="link link-hover">Resume</a>
+        <a href="./contact.html" class="link link-hover">Contact</a>
+      </nav>
+      <nav>
+        <div class="grid grid-flow-col gap-4">
+          <a
+            href="https://www.linkedin.com/in/tri-okta-anggraini-7824b1249/"
+            aria-label="profile linkedin"
+            target="_blank"
+          >
+            <img src="./images/linkedin.svg" alt="linkedin" class="w-7" />
+          </a>
+          <a
+            href="https://www.instagram.com/bia_elkz/"
+            aria-label="profile instagram"
+            target="_blank"
+          >
+            <img src="./images/instagram.svg" alt="instagram" class="w-7" />
+          </a>
+          <a
+            href="https://wa.me/6283171616493"
+            aria-label="whatsapp number"
+            target="_blank"
+          >
+            <img src="./images/whatsapp.svg" alt="whatsapp" class="w-7" />
+          </a>
         </div>
-      </div>
-    </aside>
-    <main class="md:col-span-4 flex items-center p-4">
-      <section class="hero md:justify-items-start">
-        <div class="hero-content">
-          <div class="max-w-md">
-            <h1
-              class="text-2xl md:text-3xl lg:text-4xl leading-snug font-semibold"
-            >
-              Tri Okta Anggraini
-            </h1>
-            <p class="prose text-sm md:text-base leading-relaxed my-4">
-              Profesional dengan pengalaman sebagai Operator Quality Control di
-              industri manufaktur, terampil dalam menganalisis kualitas produk,
-              monitoring proses produksi, dan dokumentasi. Berorientasi pada
-              detail, adaptif, dan mampu bekerja di bawah tekanan untuk mencapai
-              hasil terbaik.
-            </p>
-            <a
-              href="./documents/resume-tri_okta_anggraini.pdf"
-              class="btn btn-primary rounded-full"
-              target="_blank"
-            >
-              <img src="./images/download.svg" alt="download" class="w-5" />
-              Download CV
-            </a>
-          </div>
-        </div>
-      </section>
-    </main>
+      </nav>
+      <aside>
+        <p>Copyright ©2025 &mdash; All right reserved by Tri Okta Anggraini</p>
+      </aside>
+    </footer>
   </body>
 </html>
